@@ -1,0 +1,111 @@
+{
+
+	"React State Function": {
+		"prefix": ["edfj"],
+		"body": ["export default function ${1:name}({${2: parameters }}: {", "\t$2: (${3:a}: ${4:type}) => void", "}): JSX.Element {","\t", "\treturn(","\t\t${0:elements}", "\t);", "}"],
+		"description": "JSX Function Declaration."
+	},
+
+	"React Function": {
+		"prefix": ["edf"],
+		"body": ["export default function ${1:name}(): JSX.Element {", "\treturn(","\t\t${0:elements}", "\t);", "}"],
+		"description": "JSX Function Declaration w/o States."
+	},
+
+	"TS Function":{
+		"prefix": ["fts"],
+		"body": ["function ${1:name}(${2:parameters}) {","\t${0:logic}","}"],
+		"description": "Typescript Function Declaration."
+	},
+
+	"useState":{
+		"prefix": ["ucon"],
+		"body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState<${2:type}>(${3:init});"],
+		"description": "useState Declaration."
+	},
+
+	"Object Declaration":{
+		"prefix": ["ocon"],
+		"body": ["const ${1:variable}: ${2:type} = ${0:value};"],
+		"description": "Object Declaration."
+	},
+
+	"const Declaration":{
+		"prefix": ["con"],
+		"body": ["const ${1:variable} = ${0:value};"],
+		"description": "const Declaration."
+	},
+
+	"Copy Array":{
+		"prefix": ["carr"],
+		"body": ["const ${1:arr} = {...${2:arr}};"],
+		"description": "Syntax for copying array."
+	},
+
+	"Import React":{
+		"prefix": ["imr"],
+		"body": ["// Source Imports","import React from \"react\";"],
+		"description": "React import."
+	},
+
+	"Source Imports":{
+		"prefix": ["simp"],
+		"body": ["// Source Imports"],
+		"description": "Source Import."
+	},
+
+	"Component Imports":{
+		"prefix": ["cimp"],
+		"body": ["// Component Imports"],
+		"description": "Component Import."
+	},
+
+	"Design Imports":{
+		"prefix": ["dimp"],
+		"body": ["// Design Imports"],
+		"description": "Design Import."
+	},
+
+	"Breadcrumb":{
+		"prefix": ["crumb"],
+		"body": ["// Breadcrumbs:","// Main Page / "],
+		"description": "Breadcrumbs."
+	},
+
+	"Declaring Variables":{
+		"prefix": ["var"],
+		"body": ["${1:variable}={$1}$0"],
+		"description": "Declaring variable in React Component."
+	},
+
+	"useState Declaration":{
+		"prefix": ["use"],
+		"body": ["${1:param}: ${3:type}$0"],
+		"description": "Declaring parameter in React Component."
+	},
+
+	"SET useState Declaration":{
+		"prefix": ["set"],
+		"body": ["${1:param}: (${2:a}: ${3:type}) => void$0"],
+		"description": "Declaring set parameter in React Component."
+	},
+
+	"onClick Function":{
+		"prefix": ["oncl"],
+		"body": ["onClick={() => ${1:function}(${2:param})}"],
+		"description": "Declaring onClick function."
+	},
+
+	"ClassName":{
+		"prefix": ["cla"],
+		"body": ["className=\"${1:}\""],
+		"description": "Declaring className for html component."
+	},
+
+	"Console.log":{
+		"prefix": ["clog"],
+		"body": ["console.log(${1:param});"],
+		"description": "Console log to print out in console."
+	}
+	
+}
